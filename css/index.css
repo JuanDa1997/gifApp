@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@font-face {
+  font-family: "Hammersmith One", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px;
+  /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.card {
+  border-radius: 20px;
+}
+.card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card p {
+  font-family: "Hammersmith One", sans-serif;
+  padding: 5px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .my-masonry-grid {
+    margin-left: -15px;
+    /* gutter size offset */
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 15px;
+    /* gutter size offset */
+  }
+
+  .my-masonry-grid_column > div {
+    margin-bottom: 15px;
+    /* space between items */
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
